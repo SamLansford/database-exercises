@@ -4,7 +4,7 @@ select first_name, last_name
 from employees
 where first_name in ('Irena', 'Vidya')
 # and last_name in ('Reutenauer', 'Demeyer')
-order by first_name asc;
+order by first_name;
 
 
 

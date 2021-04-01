@@ -41,3 +41,14 @@ select *
 from employees
 where last_name like '%q%'
 and last_name not like '%qu%';
+
+
+
+select concat(first_name, ' ', last_name) as 'Full Name'
+from employees
+limit 100;
+
+
+select dayofmonth(birth_date)
+from employees
+limit 100;
