@@ -80,6 +80,7 @@ CREATE TABLE roles
     name VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
 );
+
 CREATE TABLE users
 (
     id      INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -89,6 +90,7 @@ CREATE TABLE users
     PRIMARY KEY (id),
     FOREIGN KEY (role_id) REFERENCES roles (id)
 );
+
 INSERT INTO roles (name)
 VALUES ('admin');
 INSERT INTO roles (name)
