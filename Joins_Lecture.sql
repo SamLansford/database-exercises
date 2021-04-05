@@ -51,9 +51,9 @@ WHERE id = 1;
 -- # ========= MINI EXERCISE 1
 -- # Using the owners and pets table, display the pet age, pet name, and owner name.
 
-select pets.age, pets.name, owners.name
-from pets
-join owners on owners.id = pets.owner_id;
+select p.age, p.name, o.name
+from pets as p
+join owners as o on o.id = p.owner_id;
 
 -- # ========= BASIC JOINS WITH ALIASES
 -- # List the number of pets at each address
