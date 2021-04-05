@@ -4,6 +4,7 @@ truncate albums;
 
 INSERT INTO albums(artist, name, release_date, genre, sales)
 values ('Michael Jackson', 'Thriller', 1982, 'Pop/Rock/R&B', 47.3),
+       ('Michael Jackson', 'Thriller', 1982, 'Pop/Rock/R&B', 47.3),
        ('AC/DC', 'Back in Black', 1980, 'Hard Rock', 26.1),
        ('Pink Floyd', 'The Dark Side of the Moon', 1973, 'Progressive Rock', 24.2),
        ('Meat Loaf', 'Bat Out of Hell', 1977, 'Hard Rock/Progressive Rock', 21.5),
