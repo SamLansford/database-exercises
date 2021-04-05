@@ -199,3 +199,5 @@ FROM owners
 JOIN pets ON pets.owner_id = owners.id
 GROUP BY owners.address
 ORDER BY COUNT(*) ASC, owners.address LIMIT 1;
+
+
