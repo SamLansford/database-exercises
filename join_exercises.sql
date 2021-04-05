@@ -10,7 +10,7 @@ Use employees;
 
 describe employees;
 
-
+#TODO write a query that shows each department along with the name of the current manager for that department.
 select d.dept_name, concat(e.first_name, ' ', e.last_name) as Full_Name
 from employees as e
 join dept_manager as dm
@@ -21,6 +21,7 @@ where dm.to_date > now()
 order by dept_name;
 
 
+#TODO Find the name of all departments currently managed by women.
 select d.dept_name, concat(e.first_name, ' ', e.last_name) as Full_Name
 from employees as e
 join dept_manager as dm
@@ -32,7 +33,7 @@ and gender = 'F'
 order by dept_name;
 
 
-
+#TODO Find the current titles of employees currently working in the Customer Service department.
 select t.title as Title, count(t.emp_no) as Total
 from titles as t
 join dept_emp as dm
@@ -45,6 +46,7 @@ and t.to_date > now()
 group by title;
 
 
+#TODO Find the current salary of all current managers.
 select d.dept_name, concat(e.first_name, ' ', e.last_name) as Full_Name, s.salary as Salary
 from employees as e
 join dept_manager as dm
