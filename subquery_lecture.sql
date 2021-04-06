@@ -83,6 +83,7 @@ SELECT emp_no, salary
 FROM salaries
 WHERE to_date > NOW()
 ORDER BY salary DESC;
+
 -- # second, add to outer query
 SELECT first_name, last_name
 FROM employees
@@ -93,6 +94,7 @@ WHERE to_date > NOW()
 ORDER BY salary DESC
 )
 LIMIT 10;
+
 -- # name and hire_date of earliest-hired department employees
 SELECT first_name, hire_date
 FROM employees
@@ -101,6 +103,7 @@ SELECT emp_no
 FROM dept_emp
 WHERE from_date = (SELECT MIN(from_date) FROM dept_emp)
 );
+
 -- # === Find the names and genders of all current department managers
 -- # first, find the emp_no of all current department managers
 SELECT emp_no
@@ -113,6 +116,7 @@ SELECT emp_no
 FROM dept_manager
 WHERE TO_DATE > NOW()
 );
+
 -- # === Find hire_date of all current engineers
 -- # all senior engineers from Customer Service department
 SELECT *
