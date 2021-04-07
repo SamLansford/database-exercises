@@ -101,4 +101,5 @@ where qt.topic_id in
         select t.id
         from topics t
         where t.name = 'mind set'
+        and t.name = 'encourage'
     );
